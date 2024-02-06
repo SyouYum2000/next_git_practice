@@ -1,6 +1,6 @@
 const Page = async() => {
   await new Promise((resolve) => setTimeout(resolve, 5000));
-  const response = await fetch('https://jsonplaceholder.typicode.com/users')
+  const response = await fetch('https://jsonplaceholder.typicode.com/users',{cache:'no-store'})
   const users = await response.json()
   return(
     <div className="m-4">
