@@ -10,6 +10,7 @@ const Page = async() => {
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
+      <p>本物です</p>
     </div>
   )
 }
